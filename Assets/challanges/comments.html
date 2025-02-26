@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment problem</title>
+</head>
+<body>
+    
+    <input id="comment" type="text" placeholder="Add a comment">
+    <button onclick="printComment()">print</button>
+
+    <!--comment output-->
+    <p id="commentOutput"></p>
+
+
+
+    <!--- JS CODE --->
+    <script>
+        let commentEl = document.getElementById('comment');
+        let commentOutputEl = document.getElementById('commentOutput');
+        let breakRow = document.querySelector('br');
+        let userComment = "";
+        let savedComments = [];
+        
+        function printComment(){
+            userComment = commentEl.value;
+            saveComment();
+            commentOutputEl.textContent = userComment;
+        }
+
+        function saveComment(){
+            savedComments.push(userComment);
+            console.log(savedComments);
+        }
+
+    </script>
+</body>
+</html>

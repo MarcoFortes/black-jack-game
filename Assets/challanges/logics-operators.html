@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&& and ||</title>
+</head>
+<body>
+    
+
+    <!-- JS CODE -->
+    <script>
+        
+        let likesDocumentaries = true
+        let likesStartUps = true
+
+        if (likesDocumentaries === true || likesStartUps === false){
+            recommendMovies();
+        } else {
+            alertUser()
+        }
+
+        function recommendMovies(){
+            console.log("Hey, check out this new film we think you will like!");
+        }
+
+        function alertUser(){
+            console.log(" We don't have more films for you");
+        }
+
+    </script> 
+    
+</body>
+</html>

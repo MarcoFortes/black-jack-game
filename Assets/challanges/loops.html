@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops | arrays | DOM</title>
+</head>
+<body>
+
+    <p id="greeting-el"></p>
+    
+    <script>
+        /*    START      FINISH   STEP SIZE
+        for (let i = 10; i < 101;  i += 10){
+            console.log(i);
+        } */
+
+        let sentence = ["Hello", "my", "name", "is", "Per"];
+        let greetingEl = document.getElementById("greeting-el");
+
+        for (let i = 0; i < sentence.length; i += 1){
+            greetingEl.textContent += " " + sentence[i];
+        }
+        
+    </script>
+</body>
+</html>
